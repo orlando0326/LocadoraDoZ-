@@ -1,6 +1,6 @@
 
-using LocadoraDoZe.Api.data;
-using LocadoraDoZe.Data;
+using Locadora_ze.api.data;
+using LocadoraDoZe;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,6 +1,7 @@
 ﻿using LocadoraDoZe.Models;
-using LocadoraDoZe.,Models.LocadoraDoZe.Models;
+using LocadoraDoZe.Models.LocadoraDoZe.Models;
 using System.ComponentModel.DataAnnotations;
+
 
 namespace LocadoraDoZe.Models
 {

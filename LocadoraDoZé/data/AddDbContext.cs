@@ -1,5 +1,5 @@
-﻿using Locadora_ze.api.models;
-using LocadoraDoZe.Models;
+﻿using LocadoraDoZe.Models;
+using LocadoraDoZe.Models.LocadoraDoZe.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Locadora_ze.api.data

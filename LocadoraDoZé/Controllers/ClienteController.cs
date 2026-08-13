@@ -1,6 +1,5 @@
 ﻿using Locadora_ze.api.data;
-using Locadora_ze.api.models;
-using LocadoraDoZe.Data;
+using LocadoraDoZe.Models.LocadoraDoZe.Models;
 using LocadoraDoZe.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -18,21 +17,21 @@ namespace Locadora_ze.api.Controllers
             _Context = context;
         }
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Clientes>>> GetClientes()
+        public async Task<ActionResult<IEnumerable<cliente>>> GetClientes()
         {
             return await _Context.clientes.ToListAsync();
 
 
         }
         [HttpPost]
-        public async Task<IActionResult> PostClientes(Clientes clientes)
+        public async Task<IActionResult> PostClientes(cliente clientes)
         {
             _Context.clientes.Add(clientes);
             await _Context.SaveChangesAsync();
             return Ok("cliente criado");
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> AlterarCliente(int id, Clientes clientes)
+        public async Task<IActionResult> AlterarCliente(int id, cliente clientes)
         {
             if (id != clientes.Id)
             {

@@ -1,6 +1,5 @@
 ﻿using Locadora_ze.api.data;
-using Locadora_ze.api.models;
-using LocadoraDoZe.data;
+
 using LocadoraDoZe.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
